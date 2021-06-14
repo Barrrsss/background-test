@@ -3,24 +3,14 @@ import { BrowserModule } from '@angular/platform-browser';
 import {ReactiveFormsModule} from '@angular/forms';
 
 import { AppComponent } from './app.component';
-import { TestInputComponent } from './test-input/test-input.component';
-import { TestSelectComponent } from './test-select/test-select.component';
-import { TestNumberComponent } from './test-number/test-number.component';
-import { TestCheckboxComponent } from './test-checkbox/test-checkbox.component';
-import { HttpClientModule }   from '@angular/common/http';
+import { DynamicFormBuilderModule } from './dynamic-form-builder/dynamic-form-builder.module';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    TestInputComponent,
-    TestSelectComponent,
-    TestNumberComponent,
-    TestCheckboxComponent
+    AppComponent
   ],
   imports: [
-    BrowserModule,
-    ReactiveFormsModule,
-    HttpClientModule
+    BrowserModule, ReactiveFormsModule , DynamicFormBuilderModule
   ],
   providers: [],
   bootstrap: [AppComponent],

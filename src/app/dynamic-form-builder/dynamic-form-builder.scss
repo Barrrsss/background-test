@@ -1,0 +1,16 @@
+.form {
+  &__button {
+    width: 139px;
+    height: 52px;
+    background: #FFE783;
+    border-radius: 3px;
+    margin: 30px 0 30px 0;
+    &:hover{
+      cursor: pointer;
+      opacity: 0.8;
+    }
+    &:disabled{
+      opacity: 0.7;
+    }
+  }
+}
