@@ -1,6 +1,19 @@
 .alert {
   color: red;
+  position: absolute;
 }
 .text__danger{
   color: red;
+}
+.form{
+  &__group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 30px;
+    padding-bottom: 30px;
+    &_label {
+      width: 150px;
+    }
+  }
 }

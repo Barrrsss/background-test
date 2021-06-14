@@ -25,7 +25,13 @@ export class AppComponent {
       value: '',
       required: true,
     },
-
+    {
+      type: 'number',
+      name: 'age',
+      label: 'Возраст',
+      value: '',
+      required: true,
+    },
     {
       type: 'dropdown',
       name: 'family',
@@ -33,14 +39,14 @@ export class AppComponent {
       value: 'one',
       required: false,
       options: [
-        { key: 'one', label: 'Не женат/Не замужем' },
+        { key: 'one', label: 'Не женат/Не замужем', styles: 'Не женат/Не замужем' },
         { key: 'two', label: 'Женат/Замужем' }
       ]
     },
     {
       type: 'dropdown',
       name: 'city',
-      label: 'Город рождения',
+      label: 'Место рождения',
       value: '1',
       required: false,
       options: [
@@ -64,9 +70,16 @@ export class AppComponent {
         { key: '6', label: 'Вождение' },
         { key: '7', label: 'Программирование' },
         { key: '8', label: 'Управление вертолетом' },
-        { key: '9', label: 'Оперное пение' },
       ]
-    }
+    },
+    {
+      type: 'text',
+      name: 'university',
+      label: 'ВУЗ',
+      value: '',
+      required: false,
+    },
+
   ];
 
   constructor() {

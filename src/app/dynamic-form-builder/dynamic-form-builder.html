@@ -6,7 +6,8 @@
   <div class="form__group">
     <div></div>
     <div >
-      <button type="submit" [disabled]="!form.valid" class="form__button">Отправить</button>
+      <button type="submit" [disabled]="!form.valid" class="form__button" >Отправить</button>
+      <button (click)="add()" class="form__button_add"></button>
     </div>
   </div>
 </form>

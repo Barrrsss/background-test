@@ -1,7 +1,17 @@
 .alert {
-  color: red; }
+  color: red;
+  position: absolute; }
 
 .text__danger {
   color: red; }
+
+.form__group {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 30px;
+  padding-bottom: 30px; }
+  .form__group_label {
+    width: 150px; }
 
 /*# sourceMappingURL=field-builder.css.map */

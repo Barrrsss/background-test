@@ -1,0 +1,48 @@
+.form {
+  &__number {
+    display: flex;
+    flex-direction: row;
+    &_input{
+      width: 70px;
+      height: 44px;
+      background: #FFFFFF;
+      border: 2px solid #C3C3C3;
+      box-sizing: border-box;
+      border-radius: 3px;
+    }
+    &_buttons {
+      display: flex;
+      flex-direction: column;
+      margin-left: 5px;
+    }
+    &_button{
+      content: '';
+      width: 30px;
+      height: 22px;
+      border-radius: 3px;
+      background: #DFDFDF no-repeat center;
+      outline: none;
+      border: none;
+      &:last-child{
+        border-top: 1px solid #9D9D9D;
+      }
+      &:hover{
+        cursor: pointer;
+      }
+      &-up{
+        background-image: url(../../../../assets/up.svg);
+      }
+      &-down{
+        background-image: url(../../../../assets/down.svg);
+      }
+    }
+  }
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+}

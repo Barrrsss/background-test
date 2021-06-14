@@ -1,7 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { FormGroup } from '@angular/forms';
 
-// text,email,tel,textarea,password,
 @Component({
     selector: 'textbox',
     templateUrl: './testInput.html',

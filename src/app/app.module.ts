@@ -10,7 +10,7 @@ import { DynamicFormBuilderModule } from './dynamic-form-builder/dynamic-form-bu
     AppComponent
   ],
   imports: [
-    BrowserModule, ReactiveFormsModule , DynamicFormBuilderModule
+    BrowserModule, ReactiveFormsModule , DynamicFormBuilderModule, ReactiveFormsModule.withConfig({warnOnNgModelWithFormControl: 'never'})
   ],
   providers: [],
   bootstrap: [AppComponent],

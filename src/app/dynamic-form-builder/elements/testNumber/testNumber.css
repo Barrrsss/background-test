@@ -1,0 +1,39 @@
+.form__number {
+  display: flex;
+  flex-direction: row; }
+  .form__number_input {
+    width: 70px;
+    height: 44px;
+    background: #FFFFFF;
+    border: 2px solid #C3C3C3;
+    box-sizing: border-box;
+    border-radius: 3px; }
+  .form__number_buttons {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5px; }
+  .form__number_button {
+    content: '';
+    width: 30px;
+    height: 22px;
+    border-radius: 3px;
+    background: #DFDFDF no-repeat center;
+    outline: none;
+    border: none; }
+    .form__number_button:last-child {
+      border-top: 1px solid #9D9D9D; }
+    .form__number_button:hover {
+      cursor: pointer; }
+    .form__number_button-up {
+      background-image: url(../../../../assets/up.svg); }
+    .form__number_button-down {
+      background-image: url(../../../../assets/down.svg); }
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0; }
+
+/*# sourceMappingURL=testNumber.css.map */
