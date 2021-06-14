@@ -25,33 +25,46 @@ export class AppComponent {
       value: '',
       required: true,
     },
-    {
-      type: 'text',
-      name: 'email',
-      label: 'E-mail',
-      value: '',
-      required: false,
-    },
 
     {
       type: 'dropdown',
-      name: 'country',
-      label: 'Country',
-      value: 'in',
-      required: true,
+      name: 'family',
+      label: 'Семейное положение',
+      value: 'one',
+      required: false,
       options: [
-        { key: 'in', label: 'India' },
-        { key: 'us', label: 'USA' }
+        { key: 'one', label: 'Не женат/Не замужем' },
+        { key: 'two', label: 'Женат/Замужем' }
+      ]
+    },
+    {
+      type: 'dropdown',
+      name: 'city',
+      label: 'Город рождения',
+      value: '1',
+      required: false,
+      options: [
+        { key: '1', label: 'Не важно', select: true },
+        { key: '2', label: 'Астрахань', select: false },
+        { key: '3', label: 'Волгоград', select: false },
+        { key: '4', label: 'Волжский', select: false },
       ]
     },
     {
       type: 'checkbox',
-      name: 'hobby',
-      label: 'Hobby',
-      required: true,
+      name: 'skills',
+      label: 'Навыки',
+      required: false,
       options: [
-        { key: 'f', label: 'Fishing' },
-        { key: 'c', label: 'Cooking' }
+        { key: '1', label: 'Общение' },
+        { key: '2', label: 'Иностранные языки' },
+        { key: '3', label: 'Бег с препятствиями' },
+        { key: '4', label: 'Быстрое чтение' },
+        { key: '5', label: 'Самозащита' },
+        { key: '6', label: 'Вождение' },
+        { key: '7', label: 'Программирование' },
+        { key: '8', label: 'Управление вертолетом' },
+        { key: '9', label: 'Оперное пение' },
       ]
     }
   ];
@@ -66,16 +79,9 @@ export class AppComponent {
     });
   }
 
-  onUpload(e:any) {
-    console.log(e);
-
-  }
 
   getFields() {
     return this.fields;
   }
 
-  ngDistroy() {
-    this.unsubcribe();
-  }
 }

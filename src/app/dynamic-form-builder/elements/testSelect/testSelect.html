@@ -1,0 +1,5 @@
+<div [formGroup]="form">
+  <select class="form-control" [id]="field.name" [formControlName]="field.name">
+    <option *ngFor="let opt of field.options" [value]="opt.key" [ngClass]= "((opt.select ? 'form-control__select' : 'form-control__label'))">{{opt.label}}</option>
+  </select>
+</div>
