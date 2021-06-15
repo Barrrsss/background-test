@@ -1,0 +1,9 @@
+<div [formGroup]="form" class="form__number">
+    <input [attr.type]="field.type" class="form__number_input" min="0" [id]="field.name" [name]="field.name"
+           [formControlName]="field.name" [(ngModel)]="this.form.value.age" value="1">
+  <div class="form__number_buttons">
+    <button class="form__number_button form__number_button-up" (click)="numberUp()"></button>
+    <button class="form__number_button form__number_button-down" (click)="numberDown()"></button>
+  </div>
+
+</div>

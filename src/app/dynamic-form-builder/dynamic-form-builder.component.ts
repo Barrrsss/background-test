@@ -28,4 +28,15 @@ export class DynamicFormBuilderComponent implements OnInit {
     }
     this.form = new FormGroup(fieldsCtrls);
   }
+
+  add() {
+    this.fields.push({type: 'text',
+      name: 'university',
+      label: '',
+      value: ' ',
+      required: false,
+      placeholder: 'Например, ВолГУ',})
+    console.log(this.fields)
+  }
+
 }

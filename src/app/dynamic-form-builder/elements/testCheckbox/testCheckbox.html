@@ -1,6 +1,6 @@
-<div [formGroup]="form">
+<div [formGroup]="form " class="form-check">
   <div [formGroupName]="field.name" >
-    <div *ngFor="let opt of field.options" class="form-check">
+    <div *ngFor="let opt of field.options" class="form-check__box">
 
       <input [formControlName]="opt.key" class="form-check__input" type="checkbox" [id]="opt.key" value="option1" [checked]="opt.checked" id="checkbox"/>
 

@@ -1,11 +1,12 @@
-<form class="form-group" [formGroup]="form">
-  <label  [attr.for]="field.label">
+<form class="form__group" [formGroup]="form">
+  <label  [attr.for]="field.label" class="form__group_label">
     {{field.label}}
-    <strong class="text__danger" *ngIf="field.required">*</strong>
+    <span class="text__danger" *ngIf="field.required">*</span>
   </label>
   <div  [ngSwitch]="field.type">
     <textbox *ngSwitchCase="'text'" [field]="field" [form]="form"></textbox>
     <dropdown *ngSwitchCase="'dropdown'" [field]="field" [form]="form"></dropdown>
+    <number *ngSwitchCase="'number'" [field]="field" [form]="form"></number>
     <checkbox *ngSwitchCase="'checkbox'" [field]="field" [form]="form"></checkbox>
     <div class="alert" *ngIf="!isValid && isDirty">{{field.label}} необходимо заполнить</div>
   </div>

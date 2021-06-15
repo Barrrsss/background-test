@@ -1,4 +1,9 @@
 .form-check {
+  height: 100px;
+  width: 600px;
+  column-count:2;
+  &__box {
+  }
   &__label {
 
   }
