@@ -34,7 +34,8 @@ export class DynamicFormBuilderComponent implements OnInit {
       name: 'university',
       label: '',
       value: ' ',
-      required: false,})
+      required: false,
+      placeholder: 'Например, ВолГУ',})
     console.log(this.fields)
   }
 

@@ -17,6 +17,7 @@ export class AppComponent {
       label: 'Имя',
       value: '',
       required: true,
+      placeholder: 'Имя',
     },
     {
       type: 'text',
@@ -24,6 +25,7 @@ export class AppComponent {
       label: 'Фамилия',
       value: '',
       required: true,
+      placeholder: 'Фамилия',
     },
     {
       type: 'number',
@@ -77,6 +79,7 @@ export class AppComponent {
       name: 'university',
       label: 'ВУЗ',
       value: '',
+      placeholder: 'Например, ВолГУ',
       required: false,
     },
 

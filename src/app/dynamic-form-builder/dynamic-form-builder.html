@@ -4,10 +4,13 @@
   </div>
   <div class="form"></div>
   <div class="form__group">
-    <div></div>
     <div >
       <button type="submit" [disabled]="!form.valid" class="form__button" >Отправить</button>
-      <button (click)="add()" class="form__button_add"></button>
     </div>
+    <div class="form__button-add">
+      <button (click)="add()" class="form__button-add_button"></button>
+      <p class="form__button-add_text">Добавить еще</p>
+    </div>
+
   </div>
 </form>
